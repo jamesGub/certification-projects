@@ -1,0 +1,13 @@
+JS
+
+function palindrome(str) {
+let regulus = /[\W_]/g;
+
+let betelgeuse = str.toLowerCase().replace(regulus, '');
+
+let polaris =  betelgeuse.split('').reverse().join('');
+
+return polaris === betelgeuse
+}
+
+palindrome("eye");
